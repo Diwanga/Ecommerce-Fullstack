@@ -7,11 +7,12 @@ import { mobile } from "../responsive";
 
 const Container = styled.div`
   height: 60px;
+  margin: 0px;
   ${mobile({ height: "50px" })}
 `;
 
 const Wrapper = styled.div`
-  padding: 10px 20px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,6 +20,7 @@ const Wrapper = styled.div`
 `;
 
 const Left = styled.div`
+  padding-left: 5px;
   flex: 1;
   display: flex;
   align-items: center;
@@ -31,7 +33,6 @@ const Language = styled.span`
 `;
 
 const SearchContainer = styled.div`
-  border: 0.5px solid lightgray;
   display: flex;
   align-items: center;
   margin-left: 25px;
@@ -54,6 +55,7 @@ const Logo = styled.h1`
 `;
 const Right = styled.div`
   flex: 1;
+    margin-right: 15px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
